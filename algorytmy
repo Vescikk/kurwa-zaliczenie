@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+	const int n = 20;
+	int temp = 0;
+	srand(time(NULL));
+	int tab[n];
+	for (int i = 0; i < n; i++) {
+		tab[i] = rand() % 90 + 10;
+		cout << tab[i] << " ";
+
+		if (tab[i] > temp) {
+			temp = tab[i];
+		}
+
+}
+	cout << endl << "kutwa max wartosc: " << temp;
+}
+

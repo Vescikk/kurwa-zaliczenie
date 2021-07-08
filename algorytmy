@@ -6,16 +6,15 @@ using namespace std;
 
 int main()
 {
-	const int n = 20;
-	int temp = 0;
-	srand(time(NULL));
-	int tab[n];
-	for (int i = 0; i < n; i++) {
-		tab[i] = rand() % 90 + 10;
-		cout << tab[i] << " ";
-
-		if (tab[i] > temp) {
-			temp = tab[i];
+	const int n = 20; // długość tablicy
+	int temp = 0; // tymczasowa zmienna do określania maks wartości
+	srand(time(NULL)); // zmienny seed ??
+	int tab[n]; // tablica 
+	for (int i = 0; i < n; i++) { // wiadomo
+		tab[i] = rand() % 90 + 10; // losowe liczby 10 do 100
+		cout << tab[i] << " "; // wypisywanie liczb w tablicy
+		if (tab[i] > temp) { // jesli element jest wiekszy od przypisanego ostatnio najwiekszego to zamien go tak o
+			temp = tab[i]; // to co wyzej
 		}
 
 }
